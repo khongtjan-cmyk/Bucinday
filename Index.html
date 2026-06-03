@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUAT KAMU SAYANGKU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 100%);
+            min-height: 100vh;
+        }
+
+        .heart {
+            animation: beat 1s infinite alternate;
+        }
+
+        @keyframes beat {
+            from { transform: scale(1); }
+            to { transform: scale(1.2); }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .typing {
+            overflow: hidden;
+            border-right: 3px solid #e63946;
+            white-space: nowrap;
+            width: fit-content;
+            animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent }
+            50% { border-color: #e63946; }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center p-4">
+
+    <div class="bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl w-full max-w-md p-6 text-center fade-in">
+        
+        <!-- Bagian Atas -->
+        <div class="mb-6">
+            <i class="fa fa-heart text-red-500 text-5xl heart mb-4"></i>
+            <h1 class="text-2xl font-bold text-pink-600 typing mx-auto">BUAT KAMU SAYANGKU</h1>
+        </div>
+
+        <!-- Foto -->
+        <div class="rounded-full w-40 h-40 mx-auto border-4 border-pink-300 overflow-hidden shadow-lg mb-6">
+            <img src="https://picsum.photos/id/64/400/400" alt="Kita berdua" class="w-full h-full object-cover">
+        </div>
+
+        <!-- ISI PESAN, GANTI BAGIAN DI BAWAH INI YA -->
+        <div class="text-gray-700 space-y-4 mb-6">
+            <p class="font-semibold text-lg">Hai orang kesayanganku,</p>
+
+            <p>
+                Sebenernya aku gak jago ngomong manis, tapi aku pengen kamu tau kalau kamu itu orang paling berharga yang pernah aku punya.
+            </p>
+
+            <p>
+                Makasih ya udah datang, udah mau ngertiin aku, dan udah bikin hari-hariku jadi jauh lebih indah. Mulai dari kita kenal sampai sekarang, setiap detik bareng kamu rasanya selalu berharga banget.
+            </p>
+
+            <p class="font-bold text-pink-500">
+                Aku buatin ini cuma buat bilang: <br>
+                AKU BUCIN BANGET SAMA KAMU
+            </p>
+
+            <p>
+                Gak mau sama orang lain, cuma mau sama kamu terus. Mau jalanin hari senang, susah, seru, atau bosen pun, asal sama kamu aku mau banget.
+            </p>
+
+            <p class="italic text-pink-600 font-medium">
+                "Dunia mungkin luas banget, tapi rumahku cuma satu: di sebelah kamu."
+            </p>
+        </div>
+
+        <!-- BAGIAN SPESIAL KALIAN -->
+        <div class="bg-pink-100 rounded-xl p-4 text-pink-700 font-medium">
+            <p>📅 Kita bareng dari: **TANGGAL JADIAN KALIAN**</p>
+            <p>📍 Tempat favorit kita: **NAMA TEMPAT FAVORIT**</p>
+        </div>
+
+        <div class="mt-6">
+            <p class="text-sm text-gray-500">Dari orang yang paling sayang sama kamu,</p>
+            <p class="font-bold text-pink-600 text-lg">**NAMA KAMU SENDIRI**</p>
+        </div>
+
+    </div>
+
+</body>
+                                                              </html>
+                                                              
